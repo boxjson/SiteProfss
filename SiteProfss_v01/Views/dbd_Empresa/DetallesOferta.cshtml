@@ -1,0 +1,134 @@
+﻿@model SiteProfss_v01.Models.DB.Oferta
+
+@{
+    ViewBag.Title = "DetallesOferta";
+}
+
+<div id="main">
+
+    <h2>DetallesOferta</h2>
+
+    <div>
+        <h4>Oferta</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Categoria.NombreCategoria)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Departamento)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Departamento.NombreDepartamento)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TiempoContratacion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TiempoContratacion.Descripcion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Descripcion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.FechaPublicacion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FechaPublicacion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AreaLaboral)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AreaLaboral)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CantidadVacantes)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CantidadVacantes)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.HabilidadesRequeridas)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.HabilidadesRequeridas)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EdadDesde)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EdadDesde)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EdadHasta)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EdadHasta)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Remuneracion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Remuneracion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.TransporteRecorrido)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TransporteRecorrido)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.FechaLimiteSolicitud)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FechaLimiteSolicitud)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Editar", "EditarOferta", new { id = Model.Id }) |
+        @Html.ActionLink("Inicio", "Index")
+    </p>
+
+</div>

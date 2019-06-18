@@ -1,0 +1,1739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MODEL_SiteProfss.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Alertas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+          <Property Name="Parametro" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Activa" Type="bit" Nullable="false" />
+          <Property Name="SolicitanteId" Type="int" Nullable="false" />
+          <Property Name="CategoriaId" Type="int" Nullable="false" />
+          <Property Name="DepartamentoId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AniosAcademicos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Aptitudes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AptitudesRequeridas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OfertaId" Type="int" Nullable="false" />
+          <Property Name="AptitudId" Type="int" Nullable="false" />
+          <Property Name="NivelId" Type="int" Nullable="false" />
+          <Property Name="OfertaId1" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Carreras">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NombreCarrera" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DepartamentoUId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Categorias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NombreCategoria" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Departamentos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NombreDepartamento" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DepartamentosU">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NombreDepartamento" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FacultadId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmpresasCategorias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmpresaId" Type="int" Nullable="false" />
+          <Property Name="CategoriaId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Facultades">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NombreFacultad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="UniversidadId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Municipios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NombreMunicipio" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DepartamentoId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Niveles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ofertas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Titulo" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="FechaPublicacion" Type="datetime" Nullable="false" />
+          <Property Name="AreaLaboral" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CantidadVacantes" Type="int" Nullable="false" />
+          <Property Name="HabilidadesRequeridas" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EdadDesde" Type="int" Nullable="false" />
+          <Property Name="EdadHasta" Type="int" Nullable="false" />
+          <Property Name="Remuneracion" Type="bit" Nullable="false" />
+          <Property Name="TransporteRecorrido" Type="bit" Nullable="false" />
+          <Property Name="FechaLimiteSolicitud" Type="datetime" Nullable="false" />
+          <Property Name="Anulada" Type="bit" Nullable="false" />
+          <Property Name="EmpresaId" Type="int" Nullable="false" />
+          <Property Name="CategoriaId" Type="int" Nullable="false" />
+          <Property Name="DepartamentoId" Type="int" Nullable="false" />
+          <Property Name="TiempoContratacionId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sexos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SolicitantesAptitudes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SolicitanteId" Type="int" Nullable="false" />
+          <Property Name="AptitudId" Type="int" Nullable="false" />
+          <Property Name="NivelId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Solicitudes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FechaSolicitud" Type="datetime" Nullable="false" />
+          <Property Name="ComentariosSolicitante" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="ComentariosEmpresa" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="VistaEmpresa" Type="bit" Nullable="false" />
+          <Property Name="FechaVista" Type="datetime" />
+          <Property Name="SolicitanteId" Type="int" Nullable="false" />
+          <Property Name="OfertaId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TiemposContratacion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Universidades">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="NombreUniversidad" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Foto" Type="varbinary(max)" />
+          <Property Name="Direccion" Type="nvarchar" MaxLength="200" />
+          <Property Name="SitioWeb" Type="nvarchar" MaxLength="100" />
+          <Property Name="DireccionFacebook" Type="nvarchar" MaxLength="100" />
+          <Property Name="MunicipioId" Type="int" />
+        </EntityType>
+        <EntityType Name="Usuarios_Empresa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="NombreEmpresa" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="100" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="20" />
+          <Property Name="Id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuarios_Solicitante">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="NumeroCarnet" Type="nvarchar" MaxLength="20" />
+          <Property Name="NumeroCedula" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Nombres" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Apellidos" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
+          <Property Name="Nacionalidad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+          <Property Name="TelefonoCasa" Type="nvarchar" MaxLength="50" />
+          <Property Name="TelefonoCelular1" Type="nvarchar" MaxLength="20" />
+          <Property Name="TelefonoCelular2" Type="nvarchar" MaxLength="20" />
+          <Property Name="CurriculumVitae" Type="varbinary(max)" />
+          <Property Name="CarreraId" Type="int" />
+          <Property Name="SexoId" Type="int" Nullable="false" />
+          <Property Name="AnioAcademicoId" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Visitas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FechaVisita" Type="datetime" Nullable="false" />
+          <Property Name="OfertaId" Type="int" Nullable="false" />
+          <Property Name="OfertaId1" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AnioAcademicoSolicitante">
+          <End Role="AniosAcademicos" Type="Self.AniosAcademicos" Multiplicity="1" />
+          <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AniosAcademicos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios_Solicitante">
+              <PropertyRef Name="AnioAcademicoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AptitudAptitudRequerida">
+          <End Role="Aptitudes" Type="Self.Aptitudes" Multiplicity="1" />
+          <End Role="AptitudesRequeridas" Type="Self.AptitudesRequeridas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aptitudes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AptitudesRequeridas">
+              <PropertyRef Name="AptitudId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AptitudSolicitanteAptitud">
+          <End Role="Aptitudes" Type="Self.Aptitudes" Multiplicity="1" />
+          <End Role="SolicitantesAptitudes" Type="Self.SolicitantesAptitudes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aptitudes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SolicitantesAptitudes">
+              <PropertyRef Name="AptitudId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CarreraSolicitante">
+          <End Role="Carreras" Type="Self.Carreras" Multiplicity="0..1" />
+          <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Carreras">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios_Solicitante">
+              <PropertyRef Name="CarreraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoriaAlerta">
+          <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+          <End Role="Alertas" Type="Self.Alertas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorias">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Alertas">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoriaEmpresaCategoria">
+          <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+          <End Role="EmpresasCategorias" Type="Self.EmpresasCategorias" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorias">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresasCategorias">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoriaOferta">
+          <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+          <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorias">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Ofertas">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DepartamentoAlerta">
+          <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+          <End Role="Alertas" Type="Self.Alertas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamentos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Alertas">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DepartamentoMunicipio">
+          <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+          <End Role="Municipios" Type="Self.Municipios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamentos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Municipios">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DepartamentoOferta">
+          <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+          <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamentos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Ofertas">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DepartamentoUCarrera">
+          <End Role="DepartamentosU" Type="Self.DepartamentosU" Multiplicity="1" />
+          <End Role="Carreras" Type="Self.Carreras" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DepartamentosU">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carreras">
+              <PropertyRef Name="DepartamentoUId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Empresa_inherits_Usuario">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Usuarios_Empresa" Type="Self.Usuarios_Empresa" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios_Empresa">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmpresaEmpresaCategoria">
+          <End Role="Usuarios_Empresa" Type="Self.Usuarios_Empresa" Multiplicity="1" />
+          <End Role="EmpresasCategorias" Type="Self.EmpresasCategorias" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios_Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresasCategorias">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmpresaOferta">
+          <End Role="Usuarios_Empresa" Type="Self.Usuarios_Empresa" Multiplicity="1" />
+          <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios_Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Ofertas">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FacultadDepartamentoU">
+          <End Role="Facultades" Type="Self.Facultades" Multiplicity="1" />
+          <End Role="DepartamentosU" Type="Self.DepartamentosU" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facultades">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DepartamentosU">
+              <PropertyRef Name="FacultadId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MunicipioUsuario">
+          <End Role="Municipios" Type="Self.Municipios" Multiplicity="0..1" />
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Municipios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios">
+              <PropertyRef Name="MunicipioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NivelAptitudRequerida">
+          <End Role="Niveles" Type="Self.Niveles" Multiplicity="1" />
+          <End Role="AptitudesRequeridas" Type="Self.AptitudesRequeridas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Niveles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AptitudesRequeridas">
+              <PropertyRef Name="NivelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NivelSolicitanteAptitud">
+          <End Role="Niveles" Type="Self.Niveles" Multiplicity="1" />
+          <End Role="SolicitantesAptitudes" Type="Self.SolicitantesAptitudes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Niveles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SolicitantesAptitudes">
+              <PropertyRef Name="NivelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfertaAptitudRequerida">
+          <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="1" />
+          <End Role="AptitudesRequeridas" Type="Self.AptitudesRequeridas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ofertas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AptitudesRequeridas">
+              <PropertyRef Name="OfertaId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfertaSolicitud">
+          <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="1" />
+          <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ofertas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Solicitudes">
+              <PropertyRef Name="OfertaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfertaVisita">
+          <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="1" />
+          <End Role="Visitas" Type="Self.Visitas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ofertas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Visitas">
+              <PropertyRef Name="OfertaId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SexoSolicitante">
+          <End Role="Sexos" Type="Self.Sexos" Multiplicity="1" />
+          <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sexos">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios_Solicitante">
+              <PropertyRef Name="SexoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Solicitante_inherits_Usuario">
+          <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuarios_Solicitante">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitanteAlerta">
+          <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="1" />
+          <End Role="Alertas" Type="Self.Alertas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios_Solicitante">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Alertas">
+              <PropertyRef Name="SolicitanteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitanteSolicitanteAptitud">
+          <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="1" />
+          <End Role="SolicitantesAptitudes" Type="Self.SolicitantesAptitudes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios_Solicitante">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SolicitantesAptitudes">
+              <PropertyRef Name="SolicitanteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SolicitanteSolicitud">
+          <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="1" />
+          <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuarios_Solicitante">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Solicitudes">
+              <PropertyRef Name="SolicitanteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TiempoContratacionOferta">
+          <End Role="TiemposContratacion" Type="Self.TiemposContratacion" Multiplicity="1" />
+          <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TiemposContratacion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Ofertas">
+              <PropertyRef Name="TiempoContratacionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UniversidadFacultad">
+          <End Role="Universidades" Type="Self.Universidades" Multiplicity="1" />
+          <End Role="Facultades" Type="Self.Facultades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Universidades">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Facultades">
+              <PropertyRef Name="UniversidadId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MODEL_SiteProfssStoreContainer">
+          <EntitySet Name="Alertas" EntityType="Self.Alertas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AniosAcademicos" EntityType="Self.AniosAcademicos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Aptitudes" EntityType="Self.Aptitudes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AptitudesRequeridas" EntityType="Self.AptitudesRequeridas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Carreras" EntityType="Self.Carreras" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Departamentos" EntityType="Self.Departamentos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DepartamentosU" EntityType="Self.DepartamentosU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmpresasCategorias" EntityType="Self.EmpresasCategorias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Facultades" EntityType="Self.Facultades" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Municipios" EntityType="Self.Municipios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Niveles" EntityType="Self.Niveles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ofertas" EntityType="Self.Ofertas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sexos" EntityType="Self.Sexos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SolicitantesAptitudes" EntityType="Self.SolicitantesAptitudes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Solicitudes" EntityType="Self.Solicitudes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TiemposContratacion" EntityType="Self.TiemposContratacion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Universidades" EntityType="Self.Universidades" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios_Empresa" EntityType="Self.Usuarios_Empresa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios_Solicitante" EntityType="Self.Usuarios_Solicitante" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Visitas" EntityType="Self.Visitas" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AnioAcademicoSolicitante" Association="Self.FK_AnioAcademicoSolicitante">
+            <End Role="AniosAcademicos" EntitySet="AniosAcademicos" />
+            <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AptitudAptitudRequerida" Association="Self.FK_AptitudAptitudRequerida">
+            <End Role="Aptitudes" EntitySet="Aptitudes" />
+            <End Role="AptitudesRequeridas" EntitySet="AptitudesRequeridas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AptitudSolicitanteAptitud" Association="Self.FK_AptitudSolicitanteAptitud">
+            <End Role="Aptitudes" EntitySet="Aptitudes" />
+            <End Role="SolicitantesAptitudes" EntitySet="SolicitantesAptitudes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CarreraSolicitante" Association="Self.FK_CarreraSolicitante">
+            <End Role="Carreras" EntitySet="Carreras" />
+            <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoriaAlerta" Association="Self.FK_CategoriaAlerta">
+            <End Role="Categorias" EntitySet="Categorias" />
+            <End Role="Alertas" EntitySet="Alertas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoriaEmpresaCategoria" Association="Self.FK_CategoriaEmpresaCategoria">
+            <End Role="Categorias" EntitySet="Categorias" />
+            <End Role="EmpresasCategorias" EntitySet="EmpresasCategorias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoriaOferta" Association="Self.FK_CategoriaOferta">
+            <End Role="Categorias" EntitySet="Categorias" />
+            <End Role="Ofertas" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DepartamentoAlerta" Association="Self.FK_DepartamentoAlerta">
+            <End Role="Departamentos" EntitySet="Departamentos" />
+            <End Role="Alertas" EntitySet="Alertas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DepartamentoMunicipio" Association="Self.FK_DepartamentoMunicipio">
+            <End Role="Departamentos" EntitySet="Departamentos" />
+            <End Role="Municipios" EntitySet="Municipios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DepartamentoOferta" Association="Self.FK_DepartamentoOferta">
+            <End Role="Departamentos" EntitySet="Departamentos" />
+            <End Role="Ofertas" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DepartamentoUCarrera" Association="Self.FK_DepartamentoUCarrera">
+            <End Role="DepartamentosU" EntitySet="DepartamentosU" />
+            <End Role="Carreras" EntitySet="Carreras" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Empresa_inherits_Usuario" Association="Self.FK_Empresa_inherits_Usuario">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Usuarios_Empresa" EntitySet="Usuarios_Empresa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmpresaEmpresaCategoria" Association="Self.FK_EmpresaEmpresaCategoria">
+            <End Role="Usuarios_Empresa" EntitySet="Usuarios_Empresa" />
+            <End Role="EmpresasCategorias" EntitySet="EmpresasCategorias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmpresaOferta" Association="Self.FK_EmpresaOferta">
+            <End Role="Usuarios_Empresa" EntitySet="Usuarios_Empresa" />
+            <End Role="Ofertas" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FacultadDepartamentoU" Association="Self.FK_FacultadDepartamentoU">
+            <End Role="Facultades" EntitySet="Facultades" />
+            <End Role="DepartamentosU" EntitySet="DepartamentosU" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MunicipioUsuario" Association="Self.FK_MunicipioUsuario">
+            <End Role="Municipios" EntitySet="Municipios" />
+            <End Role="Usuarios" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NivelAptitudRequerida" Association="Self.FK_NivelAptitudRequerida">
+            <End Role="Niveles" EntitySet="Niveles" />
+            <End Role="AptitudesRequeridas" EntitySet="AptitudesRequeridas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NivelSolicitanteAptitud" Association="Self.FK_NivelSolicitanteAptitud">
+            <End Role="Niveles" EntitySet="Niveles" />
+            <End Role="SolicitantesAptitudes" EntitySet="SolicitantesAptitudes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfertaAptitudRequerida" Association="Self.FK_OfertaAptitudRequerida">
+            <End Role="Ofertas" EntitySet="Ofertas" />
+            <End Role="AptitudesRequeridas" EntitySet="AptitudesRequeridas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfertaSolicitud" Association="Self.FK_OfertaSolicitud">
+            <End Role="Ofertas" EntitySet="Ofertas" />
+            <End Role="Solicitudes" EntitySet="Solicitudes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfertaVisita" Association="Self.FK_OfertaVisita">
+            <End Role="Ofertas" EntitySet="Ofertas" />
+            <End Role="Visitas" EntitySet="Visitas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SexoSolicitante" Association="Self.FK_SexoSolicitante">
+            <End Role="Sexos" EntitySet="Sexos" />
+            <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Solicitante_inherits_Usuario" Association="Self.FK_Solicitante_inherits_Usuario">
+            <End Role="Usuarios" EntitySet="Usuarios" />
+            <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitanteAlerta" Association="Self.FK_SolicitanteAlerta">
+            <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+            <End Role="Alertas" EntitySet="Alertas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitanteSolicitanteAptitud" Association="Self.FK_SolicitanteSolicitanteAptitud">
+            <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+            <End Role="SolicitantesAptitudes" EntitySet="SolicitantesAptitudes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SolicitanteSolicitud" Association="Self.FK_SolicitanteSolicitud">
+            <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+            <End Role="Solicitudes" EntitySet="Solicitudes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TiempoContratacionOferta" Association="Self.FK_TiempoContratacionOferta">
+            <End Role="TiemposContratacion" EntitySet="TiemposContratacion" />
+            <End Role="Ofertas" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UniversidadFacultad" Association="Self.FK_UniversidadFacultad">
+            <End Role="Universidades" EntitySet="Universidades" />
+            <End Role="Facultades" EntitySet="Facultades" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MODEL_SiteProfss" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="DB_SiteProfss" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Usuarios" EntityType="MODEL_SiteProfss.Usuario" />
+          <EntitySet Name="Departamentos" EntityType="MODEL_SiteProfss.Departamento" />
+          <EntitySet Name="Municipios" EntityType="MODEL_SiteProfss.Municipio" />
+          <AssociationSet Name="DepartamentoMunicipio" Association="MODEL_SiteProfss.DepartamentoMunicipio">
+            <End EntitySet="Departamentos" Role="Departamento" />
+            <End EntitySet="Municipios" Role="Municipio" />
+          </AssociationSet>
+          <AssociationSet Name="MunicipioUsuario" Association="MODEL_SiteProfss.MunicipioUsuario">
+            <End Role="Municipio" EntitySet="Municipios" />
+            <End Role="Usuario" EntitySet="Usuarios" />
+          </AssociationSet>
+          <EntitySet Name="Universidades" EntityType="MODEL_SiteProfss.Universidad" />
+          <EntitySet Name="Facultades" EntityType="MODEL_SiteProfss.Facultad" />
+          <EntitySet Name="DepartamentosU" EntityType="MODEL_SiteProfss.DepartamentoU" />
+          <EntitySet Name="Carreras" EntityType="MODEL_SiteProfss.Carrera" />
+          <AssociationSet Name="UniversidadFacultad" Association="MODEL_SiteProfss.UniversidadFacultad">
+            <End Role="Universidad" EntitySet="Universidades" />
+            <End Role="Facultad" EntitySet="Facultades" />
+          </AssociationSet>
+          <AssociationSet Name="FacultadDepartamentoU" Association="MODEL_SiteProfss.FacultadDepartamentoU">
+            <End Role="Facultad" EntitySet="Facultades" />
+            <End Role="DepartamentoU" EntitySet="DepartamentosU" />
+          </AssociationSet>
+          <AssociationSet Name="DepartamentoUCarrera" Association="MODEL_SiteProfss.DepartamentoUCarrera">
+            <End Role="DepartamentoU" EntitySet="DepartamentosU" />
+            <End Role="Carrera" EntitySet="Carreras" />
+          </AssociationSet>
+          <AssociationSet Name="CarreraSolicitante" Association="MODEL_SiteProfss.CarreraSolicitante">
+            <End Role="Carrera" EntitySet="Carreras" />
+            <End Role="Solicitante" EntitySet="Usuarios" />
+          </AssociationSet>
+          <EntitySet Name="Sexos" EntityType="MODEL_SiteProfss.Sexo" />
+          <AssociationSet Name="SexoSolicitante" Association="MODEL_SiteProfss.SexoSolicitante">
+            <End Role="Sexo" EntitySet="Sexos" />
+            <End Role="Solicitante" EntitySet="Usuarios" />
+          </AssociationSet>
+          <EntitySet Name="AniosAcademicos" EntityType="MODEL_SiteProfss.AnioAcademico" />
+          <AssociationSet Name="AnioAcademicoSolicitante" Association="MODEL_SiteProfss.AnioAcademicoSolicitante">
+            <End Role="AnioAcademico" EntitySet="AniosAcademicos" />
+            <End Role="Solicitante" EntitySet="Usuarios" />
+          </AssociationSet>
+          <EntitySet Name="Visitas" EntityType="MODEL_SiteProfss.Visita" />
+          <EntitySet Name="TiemposContratacion" EntityType="MODEL_SiteProfss.TiempoContratacion" />
+          <EntitySet Name="Solicitudes" EntityType="MODEL_SiteProfss.Solicitud" />
+          <AssociationSet Name="SolicitanteSolicitud" Association="MODEL_SiteProfss.SolicitanteSolicitud">
+            <End Role="Solicitante" EntitySet="Usuarios" />
+            <End Role="Solicitud" EntitySet="Solicitudes" />
+          </AssociationSet>
+          <EntitySet Name="Categorias" EntityType="MODEL_SiteProfss.Categoria" />
+          <EntitySet Name="EmpresasCategorias" EntityType="MODEL_SiteProfss.EmpresaCategoria" />
+          <AssociationSet Name="EmpresaEmpresaCategoria" Association="MODEL_SiteProfss.EmpresaEmpresaCategoria">
+            <End Role="Empresa" EntitySet="Usuarios" />
+            <End Role="EmpresaCategoria" EntitySet="EmpresasCategorias" />
+          </AssociationSet>
+          <AssociationSet Name="CategoriaEmpresaCategoria" Association="MODEL_SiteProfss.CategoriaEmpresaCategoria">
+            <End Role="Categoria" EntitySet="Categorias" />
+            <End Role="EmpresaCategoria" EntitySet="EmpresasCategorias" />
+          </AssociationSet>
+          <EntitySet Name="Aptitudes" EntityType="MODEL_SiteProfss.Aptitud" />
+          <EntitySet Name="SolicitantesAptitudes" EntityType="MODEL_SiteProfss.SolicitanteAptitud" />
+          <AssociationSet Name="SolicitanteSolicitanteAptitud" Association="MODEL_SiteProfss.SolicitanteSolicitanteAptitud">
+            <End Role="Solicitante" EntitySet="Usuarios" />
+            <End Role="SolicitanteAptitud" EntitySet="SolicitantesAptitudes" />
+          </AssociationSet>
+          <AssociationSet Name="AptitudSolicitanteAptitud" Association="MODEL_SiteProfss.AptitudSolicitanteAptitud">
+            <End Role="Aptitud" EntitySet="Aptitudes" />
+            <End Role="SolicitanteAptitud" EntitySet="SolicitantesAptitudes" />
+          </AssociationSet>
+          <EntitySet Name="AptitudesRequeridas" EntityType="MODEL_SiteProfss.AptitudRequerida" />
+          <AssociationSet Name="AptitudAptitudRequerida" Association="MODEL_SiteProfss.AptitudAptitudRequerida">
+            <End Role="Aptitud" EntitySet="Aptitudes" />
+            <End Role="AptitudRequerida" EntitySet="AptitudesRequeridas" />
+          </AssociationSet>
+          <EntitySet Name="Niveles" EntityType="MODEL_SiteProfss.Nivel" />
+          <AssociationSet Name="NivelSolicitanteAptitud" Association="MODEL_SiteProfss.NivelSolicitanteAptitud">
+            <End Role="Nivel" EntitySet="Niveles" />
+            <End Role="SolicitanteAptitud" EntitySet="SolicitantesAptitudes" />
+          </AssociationSet>
+          <AssociationSet Name="NivelAptitudRequerida" Association="MODEL_SiteProfss.NivelAptitudRequerida">
+            <End Role="Nivel" EntitySet="Niveles" />
+            <End Role="AptitudRequerida" EntitySet="AptitudesRequeridas" />
+          </AssociationSet>
+          <EntitySet Name="Alertas" EntityType="MODEL_SiteProfss.Alerta" />
+          <AssociationSet Name="SolicitanteAlerta" Association="MODEL_SiteProfss.SolicitanteAlerta">
+            <End Role="Solicitante" EntitySet="Usuarios" />
+            <End Role="Alerta" EntitySet="Alertas" />
+          </AssociationSet>
+          <AssociationSet Name="CategoriaAlerta" Association="MODEL_SiteProfss.CategoriaAlerta">
+            <End Role="Categoria" EntitySet="Categorias" />
+            <End Role="Alerta" EntitySet="Alertas" />
+          </AssociationSet>
+          <AssociationSet Name="DepartamentoAlerta" Association="MODEL_SiteProfss.DepartamentoAlerta">
+            <End Role="Departamento" EntitySet="Departamentos" />
+            <End Role="Alerta" EntitySet="Alertas" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(MODEL_SiteProfss.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(MODEL_SiteProfss.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+          <EntitySet Name="Ofertas" EntityType="MODEL_SiteProfss.Oferta" />
+          <AssociationSet Name="EmpresaOferta" Association="MODEL_SiteProfss.EmpresaOferta">
+            <End Role="Empresa" EntitySet="Usuarios" />
+            <End Role="Oferta" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="CategoriaOferta" Association="MODEL_SiteProfss.CategoriaOferta">
+            <End Role="Categoria" EntitySet="Categorias" />
+            <End Role="Oferta" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="DepartamentoOferta" Association="MODEL_SiteProfss.DepartamentoOferta">
+            <End Role="Departamento" EntitySet="Departamentos" />
+            <End Role="Oferta" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="OfertaVisita" Association="MODEL_SiteProfss.OfertaVisita">
+            <End Role="Oferta" EntitySet="Ofertas" />
+            <End Role="Visita" EntitySet="Visitas" />
+          </AssociationSet>
+          <AssociationSet Name="TiempoContratacionOferta" Association="MODEL_SiteProfss.TiempoContratacionOferta">
+            <End Role="TiempoContratacion" EntitySet="TiemposContratacion" />
+            <End Role="Oferta" EntitySet="Ofertas" />
+          </AssociationSet>
+          <AssociationSet Name="OfertaSolicitud" Association="MODEL_SiteProfss.OfertaSolicitud">
+            <End Role="Oferta" EntitySet="Ofertas" />
+            <End Role="Solicitud" EntitySet="Solicitudes" />
+          </AssociationSet>
+          <AssociationSet Name="OfertaAptitudRequerida" Association="MODEL_SiteProfss.OfertaAptitudRequerida">
+            <End Role="Oferta" EntitySet="Ofertas" />
+            <End Role="AptitudRequerida" EntitySet="AptitudesRequeridas" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Foto" Type="Binary" Nullable="true" MaxLength="Max" FixedLength="false" />
+          <Property Name="Direccion" Type="String" MaxLength="200" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="SitioWeb" Type="String" MaxLength="100" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="DireccionFacebook" Type="String" MaxLength="100" Nullable="true" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Municipio" Relationship="MODEL_SiteProfss.MunicipioUsuario" FromRole="Usuario" ToRole="Municipio" />
+          <Property Name="MunicipioId" Type="Int32" Nullable="true" />
+        </EntityType>
+        <EntityType Name="Empresa" BaseType="MODEL_SiteProfss.Usuario" >
+          <Property Name="NombreEmpresa" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" Nullable="true" />
+          <Property Name="Telefono" Type="String" Nullable="true" MaxLength="20" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="EmpresaCategorias" Relationship="MODEL_SiteProfss.EmpresaEmpresaCategoria" FromRole="Empresa" ToRole="EmpresaCategoria" />
+          <NavigationProperty Name="Ofertas" Relationship="MODEL_SiteProfss.EmpresaOferta" FromRole="Empresa" ToRole="Oferta" />
+        </EntityType>
+        <EntityType Name="Solicitante" BaseType="MODEL_SiteProfss.Usuario" >
+          <Property Name="NumeroCarnet" Type="String" MaxLength="20" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="NumeroCedula" Type="String" MaxLength="20" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="Nombres" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FechaNacimiento" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="Nacionalidad" Type="String" MaxLength="50" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="50" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="TelefonoCasa" Type="String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TelefonoCelular1" Type="String" Nullable="true" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="TelefonoCelular2" Type="String" Nullable="true" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="CurriculumVitae" Type="Binary" Nullable="true" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="Carrera" Relationship="MODEL_SiteProfss.CarreraSolicitante" FromRole="Solicitante" ToRole="Carrera" />
+          <Property Name="CarreraId" Type="Int32" Nullable="true" />
+          <NavigationProperty Name="Sexo" Relationship="MODEL_SiteProfss.SexoSolicitante" FromRole="Solicitante" ToRole="Sexo" />
+          <Property Name="SexoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AnioAcademico" Relationship="MODEL_SiteProfss.AnioAcademicoSolicitante" FromRole="Solicitante" ToRole="AnioAcademico" />
+          <Property Name="AnioAcademicoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Solicitudes" Relationship="MODEL_SiteProfss.SolicitanteSolicitud" FromRole="Solicitante" ToRole="Solicitud" />
+          <NavigationProperty Name="SolicitanteAptitudes" Relationship="MODEL_SiteProfss.SolicitanteSolicitanteAptitud" FromRole="Solicitante" ToRole="SolicitanteAptitud" />
+          <NavigationProperty Name="Alertas" Relationship="MODEL_SiteProfss.SolicitanteAlerta" FromRole="Solicitante" ToRole="Alerta" />
+        </EntityType>
+        <EntityType Name="Departamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NombreDepartamento" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Municipios" Relationship="MODEL_SiteProfss.DepartamentoMunicipio" FromRole="Departamento" ToRole="Municipio" />
+          <NavigationProperty Name="Alertas" Relationship="MODEL_SiteProfss.DepartamentoAlerta" FromRole="Departamento" ToRole="Alerta" />
+          <NavigationProperty Name="Ofertas" Relationship="MODEL_SiteProfss.DepartamentoOferta" FromRole="Departamento" ToRole="Oferta" />
+        </EntityType>
+        <EntityType Name="Municipio">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NombreMunicipio" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Departamento" Relationship="MODEL_SiteProfss.DepartamentoMunicipio" FromRole="Municipio" ToRole="Departamento" />
+          <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Usuarios" Relationship="MODEL_SiteProfss.MunicipioUsuario" FromRole="Municipio" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="DepartamentoMunicipio">
+          <End Type="MODEL_SiteProfss.Departamento" Multiplicity="1" Role="Departamento" />
+          <End Type="MODEL_SiteProfss.Municipio" Multiplicity="*" Role="Municipio" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Municipio">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MunicipioUsuario">
+          <End Type="MODEL_SiteProfss.Municipio" Role="Municipio" Multiplicity="0..1" />
+          <End Type="MODEL_SiteProfss.Usuario" Role="Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Municipio">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="MunicipioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Universidad">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NombreUniversidad" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Facultades" Relationship="MODEL_SiteProfss.UniversidadFacultad" FromRole="Universidad" ToRole="Facultad" />
+        </EntityType>
+        <EntityType Name="Facultad">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NombreFacultad" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Universidad" Relationship="MODEL_SiteProfss.UniversidadFacultad" FromRole="Facultad" ToRole="Universidad" />
+          <Property Name="UniversidadId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DepartamentosU" Relationship="MODEL_SiteProfss.FacultadDepartamentoU" FromRole="Facultad" ToRole="DepartamentoU" />
+        </EntityType>
+        <EntityType Name="DepartamentoU">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NombreDepartamento" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Facultad" Relationship="MODEL_SiteProfss.FacultadDepartamentoU" FromRole="DepartamentoU" ToRole="Facultad" />
+          <Property Name="FacultadId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Carreras" Relationship="MODEL_SiteProfss.DepartamentoUCarrera" FromRole="DepartamentoU" ToRole="Carrera" />
+        </EntityType>
+        <EntityType Name="Carrera">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NombreCarrera" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="DepartamentoU" Relationship="MODEL_SiteProfss.DepartamentoUCarrera" FromRole="Carrera" ToRole="DepartamentoU" />
+          <Property Name="DepartamentoUId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Solicitantes" Relationship="MODEL_SiteProfss.CarreraSolicitante" FromRole="Carrera" ToRole="Solicitante" />
+        </EntityType>
+        <Association Name="UniversidadFacultad">
+          <End Type="MODEL_SiteProfss.Universidad" Role="Universidad" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Facultad" Role="Facultad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Universidad">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Facultad">
+              <PropertyRef Name="UniversidadId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FacultadDepartamentoU">
+          <End Type="MODEL_SiteProfss.Facultad" Role="Facultad" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.DepartamentoU" Role="DepartamentoU" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Facultad">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DepartamentoU">
+              <PropertyRef Name="FacultadId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DepartamentoUCarrera">
+          <End Type="MODEL_SiteProfss.DepartamentoU" Role="DepartamentoU" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Carrera" Role="Carrera" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DepartamentoU">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Carrera">
+              <PropertyRef Name="DepartamentoUId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CarreraSolicitante">
+          <End Type="MODEL_SiteProfss.Carrera" Role="Carrera" Multiplicity="0..1" />
+          <End Type="MODEL_SiteProfss.Solicitante" Role="Solicitante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Carrera">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Solicitante">
+              <PropertyRef Name="CarreraId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Sexo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Solicitantes" Relationship="MODEL_SiteProfss.SexoSolicitante" FromRole="Sexo" ToRole="Solicitante" />
+        </EntityType>
+        <Association Name="SexoSolicitante">
+          <End Type="MODEL_SiteProfss.Sexo" Role="Sexo" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Solicitante" Role="Solicitante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sexo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Solicitante">
+              <PropertyRef Name="SexoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AnioAcademico">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Solicitantes" Relationship="MODEL_SiteProfss.AnioAcademicoSolicitante" FromRole="AnioAcademico" ToRole="Solicitante" />
+        </EntityType>
+        <Association Name="AnioAcademicoSolicitante">
+          <End Type="MODEL_SiteProfss.AnioAcademico" Role="AnioAcademico" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Solicitante" Role="Solicitante" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AnioAcademico">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Solicitante">
+              <PropertyRef Name="AnioAcademicoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Visita">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechaVisita" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OfertaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Oferta" Relationship="MODEL_SiteProfss.OfertaVisita" FromRole="Visita" ToRole="Oferta" />
+          <Property Name="OfertaId1" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TiempoContratacion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Ofertas" Relationship="MODEL_SiteProfss.TiempoContratacionOferta" FromRole="TiempoContratacion" ToRole="Oferta" />
+        </EntityType>
+        <EntityType Name="Solicitud">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ComentariosSolicitante" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ComentariosEmpresa" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="VistaEmpresa" Type="Boolean" Nullable="false" />
+          <Property Name="FechaVista" Type="DateTime" Nullable="true" Precision="3" />
+          <NavigationProperty Name="Solicitante" Relationship="MODEL_SiteProfss.SolicitanteSolicitud" FromRole="Solicitud" ToRole="Solicitante" />
+          <Property Name="SolicitanteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Oferta" Relationship="MODEL_SiteProfss.OfertaSolicitud" FromRole="Solicitud" ToRole="Oferta" />
+          <Property Name="OfertaId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="SolicitanteSolicitud">
+          <End Type="MODEL_SiteProfss.Solicitante" Role="Solicitante" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Solicitud" Role="Solicitud" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Solicitante">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Solicitud">
+              <PropertyRef Name="SolicitanteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Categoria">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="NombreCategoria" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="EmpresasCategoria" Relationship="MODEL_SiteProfss.CategoriaEmpresaCategoria" FromRole="Categoria" ToRole="EmpresaCategoria" />
+          <NavigationProperty Name="Alertas" Relationship="MODEL_SiteProfss.CategoriaAlerta" FromRole="Categoria" ToRole="Alerta" />
+          <NavigationProperty Name="Ofertas" Relationship="MODEL_SiteProfss.CategoriaOferta" FromRole="Categoria" ToRole="Oferta" />
+        </EntityType>
+        <EntityType Name="EmpresaCategoria">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Empresa" Relationship="MODEL_SiteProfss.EmpresaEmpresaCategoria" FromRole="EmpresaCategoria" ToRole="Empresa" />
+          <Property Name="EmpresaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Categoria" Relationship="MODEL_SiteProfss.CategoriaEmpresaCategoria" FromRole="EmpresaCategoria" ToRole="Categoria" />
+          <Property Name="CategoriaId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="EmpresaEmpresaCategoria">
+          <End Type="MODEL_SiteProfss.Empresa" Role="Empresa" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.EmpresaCategoria" Role="EmpresaCategoria" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresaCategoria">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CategoriaEmpresaCategoria">
+          <End Type="MODEL_SiteProfss.Categoria" Role="Categoria" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.EmpresaCategoria" Role="EmpresaCategoria" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresaCategoria">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Aptitud">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Tipo" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="SolicitantesAptitud" Relationship="MODEL_SiteProfss.AptitudSolicitanteAptitud" FromRole="Aptitud" ToRole="SolicitanteAptitud" />
+          <NavigationProperty Name="AptitudesRequeridas" Relationship="MODEL_SiteProfss.AptitudAptitudRequerida" FromRole="Aptitud" ToRole="AptitudRequerida" />
+        </EntityType>
+        <EntityType Name="SolicitanteAptitud">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Solicitante" Relationship="MODEL_SiteProfss.SolicitanteSolicitanteAptitud" FromRole="SolicitanteAptitud" ToRole="Solicitante" />
+          <Property Name="SolicitanteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Aptitud" Relationship="MODEL_SiteProfss.AptitudSolicitanteAptitud" FromRole="SolicitanteAptitud" ToRole="Aptitud" />
+          <Property Name="AptitudId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Nivel" Relationship="MODEL_SiteProfss.NivelSolicitanteAptitud" FromRole="SolicitanteAptitud" ToRole="Nivel" />
+          <Property Name="NivelId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="SolicitanteSolicitanteAptitud">
+          <End Type="MODEL_SiteProfss.Solicitante" Role="Solicitante" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.SolicitanteAptitud" Role="SolicitanteAptitud" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Solicitante">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SolicitanteAptitud">
+              <PropertyRef Name="SolicitanteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AptitudSolicitanteAptitud">
+          <End Type="MODEL_SiteProfss.Aptitud" Role="Aptitud" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.SolicitanteAptitud" Role="SolicitanteAptitud" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aptitud">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SolicitanteAptitud">
+              <PropertyRef Name="AptitudId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AptitudRequerida">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OfertaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Aptitud" Relationship="MODEL_SiteProfss.AptitudAptitudRequerida" FromRole="AptitudRequerida" ToRole="Aptitud" />
+          <Property Name="AptitudId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Nivel" Relationship="MODEL_SiteProfss.NivelAptitudRequerida" FromRole="AptitudRequerida" ToRole="Nivel" />
+          <Property Name="NivelId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Oferta" Relationship="MODEL_SiteProfss.OfertaAptitudRequerida" FromRole="AptitudRequerida" ToRole="Oferta" />
+          <Property Name="OfertaId1" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="AptitudAptitudRequerida">
+          <End Type="MODEL_SiteProfss.Aptitud" Role="Aptitud" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.AptitudRequerida" Role="AptitudRequerida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Aptitud">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AptitudRequerida">
+              <PropertyRef Name="AptitudId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Nivel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Tipo" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="SolicitantesAptitudes" Relationship="MODEL_SiteProfss.NivelSolicitanteAptitud" FromRole="Nivel" ToRole="SolicitanteAptitud" />
+          <NavigationProperty Name="AptitudesRequeridas" Relationship="MODEL_SiteProfss.NivelAptitudRequerida" FromRole="Nivel" ToRole="AptitudRequerida" />
+        </EntityType>
+        <Association Name="NivelSolicitanteAptitud">
+          <End Type="MODEL_SiteProfss.Nivel" Role="Nivel" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.SolicitanteAptitud" Role="SolicitanteAptitud" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nivel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SolicitanteAptitud">
+              <PropertyRef Name="NivelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="NivelAptitudRequerida">
+          <End Type="MODEL_SiteProfss.Nivel" Role="Nivel" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.AptitudRequerida" Role="AptitudRequerida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nivel">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AptitudRequerida">
+              <PropertyRef Name="NivelId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Alerta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Parametro" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Activa" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Solicitante" Relationship="MODEL_SiteProfss.SolicitanteAlerta" FromRole="Alerta" ToRole="Solicitante" />
+          <Property Name="SolicitanteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Categoria" Relationship="MODEL_SiteProfss.CategoriaAlerta" FromRole="Alerta" ToRole="Categoria" />
+          <Property Name="CategoriaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Departamento" Relationship="MODEL_SiteProfss.DepartamentoAlerta" FromRole="Alerta" ToRole="Departamento" />
+          <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="SolicitanteAlerta">
+          <End Type="MODEL_SiteProfss.Solicitante" Role="Solicitante" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Alerta" Role="Alerta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Solicitante">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Alerta">
+              <PropertyRef Name="SolicitanteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CategoriaAlerta">
+          <End Type="MODEL_SiteProfss.Categoria" Role="Categoria" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Alerta" Role="Alerta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Alerta">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DepartamentoAlerta">
+          <End Type="MODEL_SiteProfss.Departamento" Role="Departamento" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Alerta" Role="Alerta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Alerta">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+        <EntityType Name="Oferta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="FechaPublicacion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AreaLaboral" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CantidadVacantes" Type="Int32" Nullable="false" />
+          <Property Name="HabilidadesRequeridas" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="EdadDesde" Type="Int32" Nullable="false" />
+          <Property Name="EdadHasta" Type="Int32" Nullable="false" />
+          <Property Name="Remuneracion" Type="Boolean" Nullable="false" />
+          <Property Name="TransporteRecorrido" Type="Boolean" Nullable="false" />
+          <Property Name="FechaLimiteSolicitud" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Anulada" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Empresa" Relationship="MODEL_SiteProfss.EmpresaOferta" FromRole="Oferta" ToRole="Empresa" />
+          <Property Name="EmpresaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Categoria" Relationship="MODEL_SiteProfss.CategoriaOferta" FromRole="Oferta" ToRole="Categoria" />
+          <Property Name="CategoriaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Departamento" Relationship="MODEL_SiteProfss.DepartamentoOferta" FromRole="Oferta" ToRole="Departamento" />
+          <Property Name="DepartamentoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Visitas" Relationship="MODEL_SiteProfss.OfertaVisita" FromRole="Oferta" ToRole="Visita" />
+          <NavigationProperty Name="TiempoContratacion" Relationship="MODEL_SiteProfss.TiempoContratacionOferta" FromRole="Oferta" ToRole="TiempoContratacion" />
+          <Property Name="TiempoContratacionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Solicitudes" Relationship="MODEL_SiteProfss.OfertaSolicitud" FromRole="Oferta" ToRole="Solicitud" />
+          <NavigationProperty Name="AptitudesRequeridas" Relationship="MODEL_SiteProfss.OfertaAptitudRequerida" FromRole="Oferta" ToRole="AptitudRequerida" />
+        </EntityType>
+        <Association Name="EmpresaOferta">
+          <End Type="MODEL_SiteProfss.Empresa" Role="Empresa" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Oferta" Role="Oferta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Oferta">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CategoriaOferta">
+          <End Type="MODEL_SiteProfss.Categoria" Role="Categoria" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Oferta" Role="Oferta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Oferta">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DepartamentoOferta">
+          <End Type="MODEL_SiteProfss.Departamento" Role="Departamento" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Oferta" Role="Oferta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Oferta">
+              <PropertyRef Name="DepartamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OfertaVisita">
+          <End Type="MODEL_SiteProfss.Oferta" Role="Oferta" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Visita" Role="Visita" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Oferta">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Visita">
+              <PropertyRef Name="OfertaId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TiempoContratacionOferta">
+          <End Type="MODEL_SiteProfss.TiempoContratacion" Role="TiempoContratacion" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Oferta" Role="Oferta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TiempoContratacion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Oferta">
+              <PropertyRef Name="TiempoContratacionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OfertaSolicitud">
+          <End Type="MODEL_SiteProfss.Oferta" Role="Oferta" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.Solicitud" Role="Solicitud" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Oferta">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Solicitud">
+              <PropertyRef Name="OfertaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OfertaAptitudRequerida">
+          <End Type="MODEL_SiteProfss.Oferta" Role="Oferta" Multiplicity="1" />
+          <End Type="MODEL_SiteProfss.AptitudRequerida" Role="AptitudRequerida" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Oferta">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AptitudRequerida">
+              <PropertyRef Name="OfertaId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MODEL_SiteProfssStoreContainer" CdmEntityContainer="DB_SiteProfss">
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Usuario)">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="SitioWeb" ColumnName="SitioWeb" />
+          <ScalarProperty Name="DireccionFacebook" ColumnName="DireccionFacebook" />
+          <ScalarProperty Name="MunicipioId" ColumnName="MunicipioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Solicitante)">
+        <MappingFragment StoreEntitySet="Usuarios_Solicitante">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroCarnet" ColumnName="NumeroCarnet" />
+          <ScalarProperty Name="NumeroCedula" ColumnName="NumeroCedula" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Nacionalidad" ColumnName="Nacionalidad" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TelefonoCasa" ColumnName="TelefonoCasa" />
+          <ScalarProperty Name="TelefonoCelular1" ColumnName="TelefonoCelular1" />
+          <ScalarProperty Name="TelefonoCelular2" ColumnName="TelefonoCelular2" />
+          <ScalarProperty Name="CurriculumVitae" ColumnName="CurriculumVitae" />
+          <ScalarProperty Name="CarreraId" ColumnName="CarreraId" />
+          <ScalarProperty Name="SexoId" ColumnName="SexoId" />
+          <ScalarProperty Name="AnioAcademicoId" ColumnName="AnioAcademicoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Empresa)">
+        <MappingFragment StoreEntitySet="Usuarios_Empresa">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departamentos">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Departamento)">
+        <MappingFragment StoreEntitySet="Departamentos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreDepartamento" ColumnName="NombreDepartamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Municipios">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Municipio)">
+        <MappingFragment StoreEntitySet="Municipios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreMunicipio" ColumnName="NombreMunicipio" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Universidades">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Universidad)">
+        <MappingFragment StoreEntitySet="Universidades">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreUniversidad" ColumnName="NombreUniversidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facultades">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Facultad)">
+        <MappingFragment StoreEntitySet="Facultades">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreFacultad" ColumnName="NombreFacultad" />
+          <ScalarProperty Name="UniversidadId" ColumnName="UniversidadId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartamentosU">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.DepartamentoU)">
+        <MappingFragment StoreEntitySet="DepartamentosU">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreDepartamento" ColumnName="NombreDepartamento" />
+          <ScalarProperty Name="FacultadId" ColumnName="FacultadId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carreras">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Carrera)">
+        <MappingFragment StoreEntitySet="Carreras">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreCarrera" ColumnName="NombreCarrera" />
+          <ScalarProperty Name="DepartamentoUId" ColumnName="DepartamentoUId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sexos">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Sexo)">
+        <MappingFragment StoreEntitySet="Sexos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AniosAcademicos">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.AnioAcademico)">
+        <MappingFragment StoreEntitySet="AniosAcademicos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visitas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Visita)">
+        <MappingFragment StoreEntitySet="Visitas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaVisita" ColumnName="FechaVisita" />
+          <ScalarProperty Name="OfertaId" ColumnName="OfertaId" />
+          <ScalarProperty Name="OfertaId1" ColumnName="OfertaId1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TiemposContratacion">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.TiempoContratacion)">
+        <MappingFragment StoreEntitySet="TiemposContratacion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Solicitudes">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Solicitud)">
+        <MappingFragment StoreEntitySet="Solicitudes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaSolicitud" ColumnName="FechaSolicitud" />
+          <ScalarProperty Name="ComentariosSolicitante" ColumnName="ComentariosSolicitante" />
+          <ScalarProperty Name="ComentariosEmpresa" ColumnName="ComentariosEmpresa" />
+          <ScalarProperty Name="VistaEmpresa" ColumnName="VistaEmpresa" />
+          <ScalarProperty Name="FechaVista" ColumnName="FechaVista" />
+          <ScalarProperty Name="SolicitanteId" ColumnName="SolicitanteId" />
+          <ScalarProperty Name="OfertaId" ColumnName="OfertaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Categoria)">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpresasCategorias">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.EmpresaCategoria)">
+        <MappingFragment StoreEntitySet="EmpresasCategorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Aptitudes">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Aptitud)">
+        <MappingFragment StoreEntitySet="Aptitudes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SolicitantesAptitudes">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.SolicitanteAptitud)">
+        <MappingFragment StoreEntitySet="SolicitantesAptitudes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SolicitanteId" ColumnName="SolicitanteId" />
+          <ScalarProperty Name="AptitudId" ColumnName="AptitudId" />
+          <ScalarProperty Name="NivelId" ColumnName="NivelId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AptitudesRequeridas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.AptitudRequerida)">
+        <MappingFragment StoreEntitySet="AptitudesRequeridas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OfertaId" ColumnName="OfertaId" />
+          <ScalarProperty Name="AptitudId" ColumnName="AptitudId" />
+          <ScalarProperty Name="NivelId" ColumnName="NivelId" />
+          <ScalarProperty Name="OfertaId1" ColumnName="OfertaId1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Niveles">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Nivel)">
+        <MappingFragment StoreEntitySet="Niveles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alertas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Alerta)">
+        <MappingFragment StoreEntitySet="Alertas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Parametro" ColumnName="Parametro" />
+          <ScalarProperty Name="Activa" ColumnName="Activa" />
+          <ScalarProperty Name="SolicitanteId" ColumnName="SolicitanteId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ofertas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Oferta)">
+        <MappingFragment StoreEntitySet="Ofertas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+          <ScalarProperty Name="AreaLaboral" ColumnName="AreaLaboral" />
+          <ScalarProperty Name="CantidadVacantes" ColumnName="CantidadVacantes" />
+          <ScalarProperty Name="HabilidadesRequeridas" ColumnName="HabilidadesRequeridas" />
+          <ScalarProperty Name="EdadDesde" ColumnName="EdadDesde" />
+          <ScalarProperty Name="EdadHasta" ColumnName="EdadHasta" />
+          <ScalarProperty Name="Remuneracion" ColumnName="Remuneracion" />
+          <ScalarProperty Name="TransporteRecorrido" ColumnName="TransporteRecorrido" />
+          <ScalarProperty Name="FechaLimiteSolicitud" ColumnName="FechaLimiteSolicitud" />
+          <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+          <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+          <ScalarProperty Name="TiempoContratacionId" ColumnName="TiempoContratacionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,469 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script type="text/javascript">
+
+
+</script>
+
+<!-- Main Content -->
+<div class="content-box">
+    <!-- Hero Section -->
+    <section class="section section-hero">
+        <div class="hero-box">
+            <div class="container">
+                <div class="hero-text align-center">
+                    <h1>¡Encuentra tu pasantia ahora!</h1>
+                    <p>¡Utiliza nuestro buscador y encuentra las vacantes disponibles!</p>
+                </div>
+                <form style="max-width: 1000px;" class="destinations-form">
+                    <div class="input-line">
+                        <input id="pr" type="text" style="padding-right:30px;margin-right:5px; width:800px; max-width: 800px" name="destination" value="" class="form-input " placeholder="¿En que area laboral te gustaria hacer tus pasantia?" />
+                        <button id="sendee" type="button" style="margin-left:5px" name="destination-submit" class="form-submit btn btn-special no-icon">Buscar Ofertas</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="result">
+
+    @Html.TextBox("mitextbox", null, htmlAttributes: new { id = "dato" })
+    <input type="button" id="send" value="Send" onclick="function myfunction()
+    {
+    var tx = document.getElementById('dato').getAttribute('value');
+    alert(tx);
+    }" />
+    
+</div>
+<!-- Start about section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Start welcome area -->
+                <div class="welcome-area">
+                    <div class="title-area">
+                        <h2 class="tittle">Bienvenidos a <span>SiteProfss</span></h2>
+                        <span class="tittle-line"></span>
+                        <p style="font-family: 'Raleway', sans-serif; font-size: 25px; color: #343333">¡Selecciona una de las categorias y navega entre las ofertas mas actualizadas que las empresas tienen para ti!</p>
+                    </div>
+                    <div class="welcome-content">
+                        <ul class="wc-table">
+                            <li>
+                                <div class="single-wc-content wow fadeInUp">
+                                    <span class="fa fa-plane wc-icon"></span>
+                                    <h4 class="wc-tittle">Turismo</h4>
+                                    <p style="font-family: 'Raleway', sans-serif; font-size: 24px; color: #db5353">¡Encuentra y Aplica YA!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-wc-content wow fadeInUp">
+                                    <span class="fa fa-pie-chart wc-icon"></span>
+                                    <h4 class="wc-tittle">Estadistica</h4>
+                                    <p style="font-family: 'Raleway', sans-serif; font-size: 24px; color: #db5353">¡Encuentra y Aplica YA!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-wc-content wow fadeInUp">
+                                    <span class="fa fa-line-chart wc-icon"></span>
+                                    <h4 class="wc-tittle">Economía</h4>
+                                    <p style="font-family: 'Raleway', sans-serif; font-size: 24px; color: #db5353">¡Encuentra y Aplica YA!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-wc-content wow fadeInUp">
+                                    <span class="fa fa-laptop wc-icon"></span>
+                                    <h4 class="wc-tittle">Tecnología</h4>
+                                    <p style="font-family: 'Raleway', sans-serif; font-size: 24px; color: #db5353">¡Encuentra y Aplica YA!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End welcome area -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End about section -->
+<!-- Start counter section -->
+<section id="counter">
+    <img src="/img/counter-bg.jpg" alt="img">
+    <div class="counter-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Start counter area -->
+                    <div class="counter-area">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <div class="single-counter">
+                                <span class="fa fa-users"></span>
+                                <div class="counter-count">
+                                    <span class="counter">100</span>
+                                    <p>Solicitantes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <div class="single-counter">
+                                <span class="fa fa-university"></span>
+                                <div class="counter-count">
+                                    <span class="counter">50</span>
+                                    <p>Universidades</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <div class="single-counter">
+                                <span class="fa fa-suitcase"></span>
+                                <div class="counter-count">
+                                    <span class="counter">300</span>
+                                    <p>Empresas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <div class="single-counter">
+                                <span class="fa fa-newspaper-o"></span>
+                                <div class="counter-count">
+                                    <span class="counter">800</span>
+                                    <p>Ofertas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End counter section -->
+<!-- Start service section -->
+<section id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="service-area">
+                    <div class="title-area">
+                        <h2 class="tittle">Service we offer</h2>
+                        <span class="tittle-line"></span>
+                        <p style="font-family: 'Raleway', sans-serif; font-size: 25px; color: #343333"> las ofertas mas reciente para portularte a  las vacantes disponibles que las empresas tienen par ti </p>
+                    </div>
+                    <!-- service content -->
+                    <div class="service-content">
+                        <ul class="service-table">
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-edit service-icon"></span>
+                                    <h4 class="service-title">UX Design</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-sort-amount-asc service-icon"></span>
+                                    <h4 class="service-title">Strategy</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-map-o service-icon"></span>
+                                    <h4 class="service-title">UI Design</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-briefcase
+                                           service-icon"></span>
+                                    <h4 class="service-title">Analystic</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-cubes service-icon"></span>
+                                    <h4 class="service-title">Usibility</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-road service-icon"></span>
+                                    <h4 class="service-title">Business solution</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-language service-icon"></span>
+                                    <h4 class="service-title">Creative concept</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                            <li class="col-md-3 col-sm-6">
+                                <div class="single-service wow slideInUp">
+                                    <span class="fa fa-server service-icon"></span>
+                                    <h4 class="service-title">Support</h4>
+                                    <p>At vero eos et accusa mus odio in dignissimos ducimus qui anditiis the tatum</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End service section -->
+<!-- Start call to action -->
+<section id="call-to-action">
+    <img src="/img/call-to-action-bg.png" alt="img">
+    <div class="call-to-overlay">
+        <div class="container">
+            <div class="call-to-content wow fadeInUp">
+                <h2>Inteta lo imposible con el fin de alcanzar tus sueños</h2>
+                <a href="#" class="button button-default" data-text="OFERTA"><span>SOLICITAR</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End call to action -->
+<!-- Start Team action -->
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="team-area">
+                    <div class="title-area">
+                        <h2 class="tittle">Meet our team</h2>
+                        <span class="tittle-line"></span>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+                    </div>
+                    <!-- Start team content -->
+                    <div class="team-content">
+                        <ul class="team-grid">
+                            <li>
+                                <div class="team-item team-img-1 wow fadeInUp">
+                                    <div class="team-info">
+                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                        <a href="#"><span class="fa fa-pinterest"></span></a>
+                                        <a href="#"><span class="fa fa-rss"></span></a>
+                                    </div>
+                                </div>
+                                <div class="team-address">
+                                    <p>John Richerd</p>
+                                    <span>CEO & Founder</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="team-item team-img-2 wow fadeInUp">
+                                    <div class="team-info">
+                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                        <a href="#"><span class="fa fa-pinterest"></span></a>
+                                        <a href="#"><span class="fa fa-rss"></span></a>
+                                    </div>
+                                </div>
+                                <div class="team-address">
+                                    <p>MIKE BATTON</p>
+                                    <span>Co-founder</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="team-item team-img-3 wow fadeInUp">
+                                    <div class="team-info">
+                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                        <a href="#"><span class="fa fa-pinterest"></span></a>
+                                        <a href="#"><span class="fa fa-rss"></span></a>
+                                    </div>
+                                </div>
+                                <div class="team-address">
+                                    <p>JOHN VICK</p>
+                                    <span>Developer</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="team-item team-img-4 wow fadeInUp">
+                                    <div class="team-info">
+                                        <p> I must explain to you how all this mistaken idea of denouncing pleasure n</p>
+                                        <a href="#"><span class="fa fa-facebook"></span></a>
+                                        <a href="#"><span class="fa fa-twitter"></span></a>
+                                        <a href="#"><span class="fa fa-pinterest"></span></a>
+                                        <a href="#"><span class="fa fa-rss"></span></a>
+                                    </div>
+                                </div>
+                                <div class="team-address">
+                                    <p>ROB HANSOM</p>
+                                    <span>Senior designer</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End team content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Start Team action -->
+
+<!-- Start Testimonial section -->
+<section id="testimonial">
+    <img src="/img/testimonial-bg.jpg" alt="img">
+    <div class="counter-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Start Testimonial area -->
+                    <div class="testimonial-area">
+                        <div class="title-area">
+                            <h2 class="tittle">What people say about us</h2>
+                            <span class="tittle-line"></span>
+                        </div>
+                        <div class="testimonial-conten">
+                            <!-- Start testimonial slider -->
+                            <div class="testimonial-slider">
+                                <!-- single slide -->
+                                <div class="single-slide">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat. Duis aute irure d olor in reprehenderit</p>
+                                    <div class="single-testimonial">
+                                        <img class="testimonial-thumb" src="/img/testimonial-image1.png" alt="img">
+                                        <p>Jonna Hike</p>
+                                        <span>CEO, Themeforest</span>
+                                    </div>
+                                </div>
+                                <!-- single slide -->
+                                <div class="single-slide">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat. Duis aute irure d olor in reprehenderit</p>
+                                    <div class="single-testimonial">
+                                        <img class="testimonial-thumb" src="/img/team-member2.png" alt="img">
+                                        <p>Jonna Hike</p>
+                                        <span>CEO, Themeforest</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Testimonial section -->
+<!-- Start from blog section -->
+<section id="from-blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="from-blog-area">
+                    <div class="title-area">
+                        <h2 class="tittle">Noticias</h2>
+                        <span class="tittle-line"></span>
+                        <p>Encuentra las noticias mas reciente sobre novedades de pasantias en Nicaragua</p>
+                    </div>
+                    <!-- From Blog content -->
+                    <div class="from-blog-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <article class="single-from-blog">
+                                    <figure>
+                                        <a href="blog-single.html"><img src="~/img/dgi.png" width="370px" height="250px" alt="img"></a>
+                                    </figure>
+                                    <div class="blog-title">
+                                        <h2 style="text-align:center;"><a href=" blog-single.html">Maestrias y pasantias de la DGI</a></h2>
+                                        <p>Publicado por <a class="blog-admin" href="#">admin</a> on <span class="blog-date">Octubre,10 2016</span></p>
+                                    </div>
+                                    <p style="text-align:justify">
+                                        La DGI está desarrollando el primer encuentro de protagonistas de maestrías y pasantías,
+                                        institución que ha logrado graduar a una cantidad de compañeros de los programas de maestría.Actualmente 81 trabajadores
+                                        de la DGI cursan una maestría y más de 70 compañeros pertenecen al 5to grupo de pasantes. Más del 50% son mujeres.
+                                    </p>
+                                    <div class="blog-footer">
+                                        <a href="#"><span class="fa fa-comment"></span>18 Comentarios</a>
+                                        <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Like</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="single-from-blog">
+                                    <figure>
+                                        <a href="blog-single.html"><img src="/img/pasantias2c.jpg" width="370px" height="250px" alt="img"></a>
+                                    </figure>
+                                    <div class="blog-title">
+                                        <h2 style="text-align:center;"><a href="blog-single.html">Alta demanda de servicios IT</a></h2>
+                                        <p>Publicado por <a class="blog-admin" href="#">admin</a> on <span class="blog-date">Octubre,10 2016</span></p>
+                                    </div>
+                                    <p style="text-align:justify">
+                                        Benjamín López, fundador y director ejecutivo de Ooqia, empresa desarrolladora de
+                                        software que brinda servicios de outsourcing a compañías internacionales,se propuso a abrir un espacio para que
+                                        estudiantes de ingeniería en sistemas realizaran sus pasantías, iniciativa ha permanecido durante tres años de operación.
+                                    </p>
+                                    <div class="blog-footer">
+                                        <a href="#"><span class="fa fa-comment"></span>18 Comentarios</a>
+                                        <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Like</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="single-from-blog">
+                                    <figure>
+                                        <a href="blog-single.html"><img src="/img/sealand.jpg" alt="img"></a>
+                                    </figure>
+                                    <div class="blog-title">
+                                        <h2 style="text-align:center;"><a href="blog-single.html">Regulación de pasantías</a></h2>
+                                        <p>Publicado por <a class="blog-admin" href="#">admin</a> on <span class="blog-date">Octubre,10 2016</span></p>
+                                    </div>
+                                    <p style="text-align:justify">
+                                        la Comisión Nacional de Juventudes de la Red Local impulsa la campaña Empléate Nicaragua,
+                                        Unos 3.1 millones de personas conformaban en Nicaragua la Población Económicamente Activa (PEA), De esta cantidad, 1.4
+                                        millones son jóvenes. Un 58% del total de la juventud nicaragüense se encuentra en una situación de subempleo (pasantias).
+                                    </p>
+                                    <div class="blog-footer">
+                                        <a href="#"><span class="fa fa-comment"></span>18 Comentarios</a>
+                                        <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End from blog section -->
+
+<section id="client">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="client-area">
+                    <ul class="client-table">
+                        <li><img src="/img/envato.png" alt="client logo"></li>
+                        <li><img src="/img/google.png" alt="client logo"></li>
+                        <li><img src="/img/amazon.png" alt="client logo"></li>
+                        <li><img src="/img/discovery.png" alt="client logo"></li>
+                        <li><img src="/img/envato.png" alt="client logo"></li>
+                        <li><img src="/img/tuenti.png" alt="client logo"></li>
+                        <li><img src="/img/envato.png" alt="client logo"></li>
+                        <li><img src="/img/google.png" alt="client logo"></li>
+                        <li><img src="/img/amazon.png" alt="client logo"></li>
+                        <li><img src="/img/discovery.png" alt="client logo"></li>
+                        <li><img src="/img/envato.png" alt="client logo"></li>
+                        <li><img src="/img/tuenti.png" alt="client logo"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

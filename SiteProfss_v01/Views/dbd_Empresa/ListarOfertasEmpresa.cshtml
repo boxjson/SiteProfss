@@ -1,0 +1,115 @@
+﻿@model IEnumerable<SiteProfss_v01.Models.Clases.vmOferta>
+
+@{
+    ViewBag.Title = "ListarOfertasEmpresa";
+}
+
+<div id="main">
+
+    <h2>ListarOfertasEmpresa</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaPublicacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AreaLaboral)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantidadVacantes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HabilidadesRequeridas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EdadDesde)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EdadHasta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Remuneracion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TransporteRecorrido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaLimiteSolicitud)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoriaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartamentoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TiempoContratacionId)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPublicacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AreaLaboral)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadVacantes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HabilidadesRequeridas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EdadDesde)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EdadHasta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Remuneracion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransporteRecorrido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaLimiteSolicitud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria.NombreCategoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departamento.NombreDepartamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TiempoContratacion.Descripcion)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditarOferta", new { id=item.Id }) |
+                @Html.ActionLink("Detalles", "DetallesOferta", new { id=item.Id }) |
+                @Html.ActionLink("Anular", "Delete", new { id=item.Id })
+            </td>
+        </tr>
+    }
+
+    </table>
+
+</div>

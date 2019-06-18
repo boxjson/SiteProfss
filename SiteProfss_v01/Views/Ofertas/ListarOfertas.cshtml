@@ -1,0 +1,111 @@
+﻿@model IEnumerable<SiteProfss_v01.Models.Clases.vmOferta>
+
+@{
+    ViewBag.Title = "ListarOfertas";
+}
+
+<h2>ListarOfertas</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departamento.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TiempoContratacion.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaPublicacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AreaLaboral)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CantidadVacantes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HabilidadesRequeridas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EdadDesde)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EdadHasta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remuneracion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransporteRecorrido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaLimiteSolicitud)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departamento.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TiempoContratacion.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaPublicacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AreaLaboral)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CantidadVacantes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HabilidadesRequeridas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EdadDesde)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EdadHasta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remuneracion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TransporteRecorrido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaLimiteSolicitud)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,231 @@
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\ApplicationInsights.config
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csc.exe
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csc.exe.config
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csc.rsp
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csi.exe
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csi.rsp
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.AppContext.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\vbc.exe
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\vbc.exe.config
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\vbc.rsp
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\VBCSCompiler.exe
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\SiteProfss_v01.dll.config
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\SiteProfss_v01.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\SiteProfss_v01.pdb
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Antlr3.Runtime.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.SqlServer.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.Web.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Newtonsoft.Json.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Owin.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Helpers.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Mvc.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Optimization.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Razor.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Razor.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\WebGrease.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Antlr3.Runtime.pdb
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.Web.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Newtonsoft.Json.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Helpers.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Mvc.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Optimization.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Razor.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Razor.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.SqlServer.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Helpers.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Mvc.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Optimization.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Razor.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.WebPages.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\EntityFramework.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\obj\Debug\SiteProfss_v01.dll
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\obj\Debug\SiteProfss_v01.pdb
+C:\Users\bryga\Desktop\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\obj\Debug\SiteProfss_v01.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\ApplicationInsights.config
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csc.exe
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csc.exe.config
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csc.rsp
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csi.exe
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\csi.rsp
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.AppContext.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\vbc.exe
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\vbc.exe.config
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\vbc.rsp
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\VBCSCompiler.exe
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\SiteProfss_v01.dll.config
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\SiteProfss_v01.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\SiteProfss_v01.pdb
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Antlr3.Runtime.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.SqlServer.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.Web.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.ApplicationInsights.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Newtonsoft.Json.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Owin.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Helpers.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Mvc.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Optimization.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Razor.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Deployment.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Razor.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\WebGrease.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Antlr3.Runtime.pdb
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.Web.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.ApplicationInsights.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Newtonsoft.Json.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Helpers.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Mvc.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Optimization.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.Razor.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Deployment.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\System.Web.WebPages.Razor.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\EntityFramework.SqlServer.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Helpers.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Mvc.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Optimization.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.Razor.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.WebPages.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\EntityFramework.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\obj\Debug\SiteProfss_v01.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\obj\Debug\SiteProfss_v01.dll
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\obj\Debug\SiteProfss_v01.pdb
+C:\Users\usuario\Documents\CLASES 2016\JUDC\JUDC[FINAL]_SiteProfs_v01\SiteProfss_v01\SiteProfss_v01\obj\Debug\SiteProfss_v01.csproj.CoreCompileInputs.cache

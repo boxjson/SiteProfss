@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNet.Identity
+@using SiteProfss_v01.Models.DB;
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        string TipoUsuario = "";
+        Usuario oUsuario;
+        string Nombre;
+        using (DB_SiteProfss db = new DB_SiteProfss())
+        {
+            TipoUsuario = User.Identity.GetUserName();
+            oUsuario = db.Usuarios.FirstOrDefault(us => us.Email == TipoUsuario);
+            try
+            {
+                Nombre = ((Solicitante)oUsuario).Nombres;
+                TipoUsuario = "Solicitante";
+
+            }
+            catch (InvalidCastException)
+            {
+                Nombre = ((Empresa)oUsuario).NombreEmpresa;
+                TipoUsuario = "Empresa";
+
+            }
+        }
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hola " + Nombre + "!", "Index", "dbd_" + TipoUsuario, routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
+        </ul>
+    }
+}
+else
+{
+    <ul style="margin-top:15px" class="nav navbar-nav navbar-right">
+
+        <li>
+            <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">REGISTRARSE <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li>@Html.ActionLink("ESTUDIANTE", "Create", "Solicitantes", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                <li>@Html.ActionLink("EMPRESA", "Create", "Empresas", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+            </ul>
+        </li>
+
+        @*<li>
+                <div class="dropdown">
+                    <a class="dropbtn">REGISTRARSE</a>
+                    <ul class="dropdown-content">
+                        <li>@Html.ActionLink("ESTUDIANTE", "Create", "Solicitantes", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                        <li>@Html.ActionLink("EMPRESA", "Create", "Empresas", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                    </ul>
+                </div>
+            </li>*@
+
+        <li>@Html.ActionLink("INICIAR SESIÓN", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

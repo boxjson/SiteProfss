@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MODEL_SiteProfssStoreContainer" CdmEntityContainer="DB_SiteProfss">
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Usuario)">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="SitioWeb" ColumnName="SitioWeb" />
+          <ScalarProperty Name="DireccionFacebook" ColumnName="DireccionFacebook" />
+          <ScalarProperty Name="MunicipioId" ColumnName="MunicipioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Solicitante)">
+        <MappingFragment StoreEntitySet="Usuarios_Solicitante">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroCarnet" ColumnName="NumeroCarnet" />
+          <ScalarProperty Name="NumeroCedula" ColumnName="NumeroCedula" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Nacionalidad" ColumnName="Nacionalidad" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="TelefonoCasa" ColumnName="TelefonoCasa" />
+          <ScalarProperty Name="TelefonoCelular1" ColumnName="TelefonoCelular1" />
+          <ScalarProperty Name="TelefonoCelular2" ColumnName="TelefonoCelular2" />
+          <ScalarProperty Name="CurriculumVitae" ColumnName="CurriculumVitae" />
+          <ScalarProperty Name="CarreraId" ColumnName="CarreraId" />
+          <ScalarProperty Name="SexoId" ColumnName="SexoId" />
+          <ScalarProperty Name="AnioAcademicoId" ColumnName="AnioAcademicoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Empresa)">
+        <MappingFragment StoreEntitySet="Usuarios_Empresa">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departamentos">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Departamento)">
+        <MappingFragment StoreEntitySet="Departamentos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreDepartamento" ColumnName="NombreDepartamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Municipios">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Municipio)">
+        <MappingFragment StoreEntitySet="Municipios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreMunicipio" ColumnName="NombreMunicipio" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Universidades">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Universidad)">
+        <MappingFragment StoreEntitySet="Universidades">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreUniversidad" ColumnName="NombreUniversidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facultades">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Facultad)">
+        <MappingFragment StoreEntitySet="Facultades">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreFacultad" ColumnName="NombreFacultad" />
+          <ScalarProperty Name="UniversidadId" ColumnName="UniversidadId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartamentosU">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.DepartamentoU)">
+        <MappingFragment StoreEntitySet="DepartamentosU">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreDepartamento" ColumnName="NombreDepartamento" />
+          <ScalarProperty Name="FacultadId" ColumnName="FacultadId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carreras">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Carrera)">
+        <MappingFragment StoreEntitySet="Carreras">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreCarrera" ColumnName="NombreCarrera" />
+          <ScalarProperty Name="DepartamentoUId" ColumnName="DepartamentoUId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sexos">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Sexo)">
+        <MappingFragment StoreEntitySet="Sexos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AniosAcademicos">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.AnioAcademico)">
+        <MappingFragment StoreEntitySet="AniosAcademicos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visitas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Visita)">
+        <MappingFragment StoreEntitySet="Visitas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaVisita" ColumnName="FechaVisita" />
+          <ScalarProperty Name="OfertaId" ColumnName="OfertaId" />
+          <ScalarProperty Name="OfertaId1" ColumnName="OfertaId1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TiemposContratacion">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.TiempoContratacion)">
+        <MappingFragment StoreEntitySet="TiemposContratacion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Solicitudes">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Solicitud)">
+        <MappingFragment StoreEntitySet="Solicitudes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaSolicitud" ColumnName="FechaSolicitud" />
+          <ScalarProperty Name="ComentariosSolicitante" ColumnName="ComentariosSolicitante" />
+          <ScalarProperty Name="ComentariosEmpresa" ColumnName="ComentariosEmpresa" />
+          <ScalarProperty Name="VistaEmpresa" ColumnName="VistaEmpresa" />
+          <ScalarProperty Name="FechaVista" ColumnName="FechaVista" />
+          <ScalarProperty Name="SolicitanteId" ColumnName="SolicitanteId" />
+          <ScalarProperty Name="OfertaId" ColumnName="OfertaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorias">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Categoria)">
+        <MappingFragment StoreEntitySet="Categorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpresasCategorias">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.EmpresaCategoria)">
+        <MappingFragment StoreEntitySet="EmpresasCategorias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Aptitudes">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Aptitud)">
+        <MappingFragment StoreEntitySet="Aptitudes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SolicitantesAptitudes">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.SolicitanteAptitud)">
+        <MappingFragment StoreEntitySet="SolicitantesAptitudes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SolicitanteId" ColumnName="SolicitanteId" />
+          <ScalarProperty Name="AptitudId" ColumnName="AptitudId" />
+          <ScalarProperty Name="NivelId" ColumnName="NivelId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AptitudesRequeridas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.AptitudRequerida)">
+        <MappingFragment StoreEntitySet="AptitudesRequeridas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OfertaId" ColumnName="OfertaId" />
+          <ScalarProperty Name="AptitudId" ColumnName="AptitudId" />
+          <ScalarProperty Name="NivelId" ColumnName="NivelId" />
+          <ScalarProperty Name="OfertaId1" ColumnName="OfertaId1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Niveles">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Nivel)">
+        <MappingFragment StoreEntitySet="Niveles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alertas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Alerta)">
+        <MappingFragment StoreEntitySet="Alertas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Parametro" ColumnName="Parametro" />
+          <ScalarProperty Name="Activa" ColumnName="Activa" />
+          <ScalarProperty Name="SolicitanteId" ColumnName="SolicitanteId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ofertas">
+      <EntityTypeMapping TypeName="IsTypeOf(MODEL_SiteProfss.Oferta)">
+        <MappingFragment StoreEntitySet="Ofertas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+          <ScalarProperty Name="AreaLaboral" ColumnName="AreaLaboral" />
+          <ScalarProperty Name="CantidadVacantes" ColumnName="CantidadVacantes" />
+          <ScalarProperty Name="HabilidadesRequeridas" ColumnName="HabilidadesRequeridas" />
+          <ScalarProperty Name="EdadDesde" ColumnName="EdadDesde" />
+          <ScalarProperty Name="EdadHasta" ColumnName="EdadHasta" />
+          <ScalarProperty Name="Remuneracion" ColumnName="Remuneracion" />
+          <ScalarProperty Name="TransporteRecorrido" ColumnName="TransporteRecorrido" />
+          <ScalarProperty Name="FechaLimiteSolicitud" ColumnName="FechaLimiteSolicitud" />
+          <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+          <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+          <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+          <ScalarProperty Name="DepartamentoId" ColumnName="DepartamentoId" />
+          <ScalarProperty Name="TiempoContratacionId" ColumnName="TiempoContratacionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

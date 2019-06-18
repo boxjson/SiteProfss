@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MODEL_SiteProfss.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Alertas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="Parametro" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Activa" Type="bit" Nullable="false" />
+    <Property Name="SolicitanteId" Type="int" Nullable="false" />
+    <Property Name="CategoriaId" Type="int" Nullable="false" />
+    <Property Name="DepartamentoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AniosAcademicos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Aptitudes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AptitudesRequeridas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OfertaId" Type="int" Nullable="false" />
+    <Property Name="AptitudId" Type="int" Nullable="false" />
+    <Property Name="NivelId" Type="int" Nullable="false" />
+    <Property Name="OfertaId1" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Carreras">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NombreCarrera" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DepartamentoUId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NombreCategoria" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Departamentos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NombreDepartamento" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepartamentosU">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NombreDepartamento" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FacultadId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmpresasCategorias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpresaId" Type="int" Nullable="false" />
+    <Property Name="CategoriaId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Facultades">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NombreFacultad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UniversidadId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Municipios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NombreMunicipio" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DepartamentoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Niveles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ofertas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Titulo" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="FechaPublicacion" Type="datetime" Nullable="false" />
+    <Property Name="AreaLaboral" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CantidadVacantes" Type="int" Nullable="false" />
+    <Property Name="HabilidadesRequeridas" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="EdadDesde" Type="int" Nullable="false" />
+    <Property Name="EdadHasta" Type="int" Nullable="false" />
+    <Property Name="Remuneracion" Type="bit" Nullable="false" />
+    <Property Name="TransporteRecorrido" Type="bit" Nullable="false" />
+    <Property Name="FechaLimiteSolicitud" Type="datetime" Nullable="false" />
+    <Property Name="Anulada" Type="bit" Nullable="false" />
+    <Property Name="EmpresaId" Type="int" Nullable="false" />
+    <Property Name="CategoriaId" Type="int" Nullable="false" />
+    <Property Name="DepartamentoId" Type="int" Nullable="false" />
+    <Property Name="TiempoContratacionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sexos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SolicitantesAptitudes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SolicitanteId" Type="int" Nullable="false" />
+    <Property Name="AptitudId" Type="int" Nullable="false" />
+    <Property Name="NivelId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Solicitudes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaSolicitud" Type="datetime" Nullable="false" />
+    <Property Name="ComentariosSolicitante" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ComentariosEmpresa" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="VistaEmpresa" Type="bit" Nullable="false" />
+    <Property Name="FechaVista" Type="datetime" />
+    <Property Name="SolicitanteId" Type="int" Nullable="false" />
+    <Property Name="OfertaId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TiemposContratacion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Universidades">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NombreUniversidad" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Foto" Type="varbinary(max)" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="200" />
+    <Property Name="SitioWeb" Type="nvarchar" MaxLength="100" />
+    <Property Name="DireccionFacebook" Type="nvarchar" MaxLength="100" />
+    <Property Name="MunicipioId" Type="int" />
+  </EntityType>
+  <EntityType Name="Usuarios_Empresa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="NombreEmpresa" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="100" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="20" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios_Solicitante">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="NumeroCarnet" Type="nvarchar" MaxLength="20" />
+    <Property Name="NumeroCedula" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombres" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellidos" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
+    <Property Name="Nacionalidad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="TelefonoCasa" Type="nvarchar" MaxLength="50" />
+    <Property Name="TelefonoCelular1" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelefonoCelular2" Type="nvarchar" MaxLength="20" />
+    <Property Name="CurriculumVitae" Type="varbinary(max)" />
+    <Property Name="CarreraId" Type="int" />
+    <Property Name="SexoId" Type="int" Nullable="false" />
+    <Property Name="AnioAcademicoId" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Visitas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaVisita" Type="datetime" Nullable="false" />
+    <Property Name="OfertaId" Type="int" Nullable="false" />
+    <Property Name="OfertaId1" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AnioAcademicoSolicitante">
+    <End Role="AniosAcademicos" Type="Self.AniosAcademicos" Multiplicity="1" />
+    <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AniosAcademicos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios_Solicitante">
+        <PropertyRef Name="AnioAcademicoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AptitudAptitudRequerida">
+    <End Role="Aptitudes" Type="Self.Aptitudes" Multiplicity="1" />
+    <End Role="AptitudesRequeridas" Type="Self.AptitudesRequeridas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aptitudes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AptitudesRequeridas">
+        <PropertyRef Name="AptitudId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AptitudSolicitanteAptitud">
+    <End Role="Aptitudes" Type="Self.Aptitudes" Multiplicity="1" />
+    <End Role="SolicitantesAptitudes" Type="Self.SolicitantesAptitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aptitudes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SolicitantesAptitudes">
+        <PropertyRef Name="AptitudId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarreraSolicitante">
+    <End Role="Carreras" Type="Self.Carreras" Multiplicity="0..1" />
+    <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Carreras">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios_Solicitante">
+        <PropertyRef Name="CarreraId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriaAlerta">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+    <End Role="Alertas" Type="Self.Alertas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Alertas">
+        <PropertyRef Name="CategoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriaEmpresaCategoria">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+    <End Role="EmpresasCategorias" Type="Self.EmpresasCategorias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EmpresasCategorias">
+        <PropertyRef Name="CategoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriaOferta">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+    <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ofertas">
+        <PropertyRef Name="CategoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DepartamentoAlerta">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+    <End Role="Alertas" Type="Self.Alertas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Alertas">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DepartamentoMunicipio">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+    <End Role="Municipios" Type="Self.Municipios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Municipios">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DepartamentoOferta">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+    <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ofertas">
+        <PropertyRef Name="DepartamentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DepartamentoUCarrera">
+    <End Role="DepartamentosU" Type="Self.DepartamentosU" Multiplicity="1" />
+    <End Role="Carreras" Type="Self.Carreras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DepartamentosU">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Carreras">
+        <PropertyRef Name="DepartamentoUId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empresa_inherits_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Usuarios_Empresa" Type="Self.Usuarios_Empresa" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios_Empresa">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpresaEmpresaCategoria">
+    <End Role="Usuarios_Empresa" Type="Self.Usuarios_Empresa" Multiplicity="1" />
+    <End Role="EmpresasCategorias" Type="Self.EmpresasCategorias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios_Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EmpresasCategorias">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpresaOferta">
+    <End Role="Usuarios_Empresa" Type="Self.Usuarios_Empresa" Multiplicity="1" />
+    <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios_Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ofertas">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FacultadDepartamentoU">
+    <End Role="Facultades" Type="Self.Facultades" Multiplicity="1" />
+    <End Role="DepartamentosU" Type="Self.DepartamentosU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Facultades">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DepartamentosU">
+        <PropertyRef Name="FacultadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MunicipioUsuario">
+    <End Role="Municipios" Type="Self.Municipios" Multiplicity="0..1" />
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Municipios">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="MunicipioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NivelAptitudRequerida">
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="1" />
+    <End Role="AptitudesRequeridas" Type="Self.AptitudesRequeridas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Niveles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AptitudesRequeridas">
+        <PropertyRef Name="NivelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NivelSolicitanteAptitud">
+    <End Role="Niveles" Type="Self.Niveles" Multiplicity="1" />
+    <End Role="SolicitantesAptitudes" Type="Self.SolicitantesAptitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Niveles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SolicitantesAptitudes">
+        <PropertyRef Name="NivelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OfertaAptitudRequerida">
+    <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="1" />
+    <End Role="AptitudesRequeridas" Type="Self.AptitudesRequeridas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ofertas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AptitudesRequeridas">
+        <PropertyRef Name="OfertaId1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OfertaSolicitud">
+    <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="1" />
+    <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ofertas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Solicitudes">
+        <PropertyRef Name="OfertaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OfertaVisita">
+    <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="1" />
+    <End Role="Visitas" Type="Self.Visitas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ofertas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Visitas">
+        <PropertyRef Name="OfertaId1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SexoSolicitante">
+    <End Role="Sexos" Type="Self.Sexos" Multiplicity="1" />
+    <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sexos">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios_Solicitante">
+        <PropertyRef Name="SexoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitante_inherits_Usuario">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios_Solicitante">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SolicitanteAlerta">
+    <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="1" />
+    <End Role="Alertas" Type="Self.Alertas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios_Solicitante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Alertas">
+        <PropertyRef Name="SolicitanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SolicitanteSolicitanteAptitud">
+    <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="1" />
+    <End Role="SolicitantesAptitudes" Type="Self.SolicitantesAptitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios_Solicitante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SolicitantesAptitudes">
+        <PropertyRef Name="SolicitanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SolicitanteSolicitud">
+    <End Role="Usuarios_Solicitante" Type="Self.Usuarios_Solicitante" Multiplicity="1" />
+    <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios_Solicitante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Solicitudes">
+        <PropertyRef Name="SolicitanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TiempoContratacionOferta">
+    <End Role="TiemposContratacion" Type="Self.TiemposContratacion" Multiplicity="1" />
+    <End Role="Ofertas" Type="Self.Ofertas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TiemposContratacion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ofertas">
+        <PropertyRef Name="TiempoContratacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UniversidadFacultad">
+    <End Role="Universidades" Type="Self.Universidades" Multiplicity="1" />
+    <End Role="Facultades" Type="Self.Facultades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Universidades">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Facultades">
+        <PropertyRef Name="UniversidadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MODEL_SiteProfssStoreContainer">
+    <EntitySet Name="Alertas" EntityType="Self.Alertas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AniosAcademicos" EntityType="Self.AniosAcademicos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Aptitudes" EntityType="Self.Aptitudes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AptitudesRequeridas" EntityType="Self.AptitudesRequeridas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Carreras" EntityType="Self.Carreras" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Departamentos" EntityType="Self.Departamentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DepartamentosU" EntityType="Self.DepartamentosU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmpresasCategorias" EntityType="Self.EmpresasCategorias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Facultades" EntityType="Self.Facultades" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Municipios" EntityType="Self.Municipios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Niveles" EntityType="Self.Niveles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ofertas" EntityType="Self.Ofertas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sexos" EntityType="Self.Sexos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SolicitantesAptitudes" EntityType="Self.SolicitantesAptitudes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Solicitudes" EntityType="Self.Solicitudes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TiemposContratacion" EntityType="Self.TiemposContratacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Universidades" EntityType="Self.Universidades" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios_Empresa" EntityType="Self.Usuarios_Empresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios_Solicitante" EntityType="Self.Usuarios_Solicitante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Visitas" EntityType="Self.Visitas" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AnioAcademicoSolicitante" Association="Self.FK_AnioAcademicoSolicitante">
+      <End Role="AniosAcademicos" EntitySet="AniosAcademicos" />
+      <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AptitudAptitudRequerida" Association="Self.FK_AptitudAptitudRequerida">
+      <End Role="Aptitudes" EntitySet="Aptitudes" />
+      <End Role="AptitudesRequeridas" EntitySet="AptitudesRequeridas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AptitudSolicitanteAptitud" Association="Self.FK_AptitudSolicitanteAptitud">
+      <End Role="Aptitudes" EntitySet="Aptitudes" />
+      <End Role="SolicitantesAptitudes" EntitySet="SolicitantesAptitudes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarreraSolicitante" Association="Self.FK_CarreraSolicitante">
+      <End Role="Carreras" EntitySet="Carreras" />
+      <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriaAlerta" Association="Self.FK_CategoriaAlerta">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="Alertas" EntitySet="Alertas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriaEmpresaCategoria" Association="Self.FK_CategoriaEmpresaCategoria">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="EmpresasCategorias" EntitySet="EmpresasCategorias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriaOferta" Association="Self.FK_CategoriaOferta">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="Ofertas" EntitySet="Ofertas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DepartamentoAlerta" Association="Self.FK_DepartamentoAlerta">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Alertas" EntitySet="Alertas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DepartamentoMunicipio" Association="Self.FK_DepartamentoMunicipio">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Municipios" EntitySet="Municipios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DepartamentoOferta" Association="Self.FK_DepartamentoOferta">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Ofertas" EntitySet="Ofertas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DepartamentoUCarrera" Association="Self.FK_DepartamentoUCarrera">
+      <End Role="DepartamentosU" EntitySet="DepartamentosU" />
+      <End Role="Carreras" EntitySet="Carreras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empresa_inherits_Usuario" Association="Self.FK_Empresa_inherits_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Usuarios_Empresa" EntitySet="Usuarios_Empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpresaEmpresaCategoria" Association="Self.FK_EmpresaEmpresaCategoria">
+      <End Role="Usuarios_Empresa" EntitySet="Usuarios_Empresa" />
+      <End Role="EmpresasCategorias" EntitySet="EmpresasCategorias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpresaOferta" Association="Self.FK_EmpresaOferta">
+      <End Role="Usuarios_Empresa" EntitySet="Usuarios_Empresa" />
+      <End Role="Ofertas" EntitySet="Ofertas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FacultadDepartamentoU" Association="Self.FK_FacultadDepartamentoU">
+      <End Role="Facultades" EntitySet="Facultades" />
+      <End Role="DepartamentosU" EntitySet="DepartamentosU" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MunicipioUsuario" Association="Self.FK_MunicipioUsuario">
+      <End Role="Municipios" EntitySet="Municipios" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NivelAptitudRequerida" Association="Self.FK_NivelAptitudRequerida">
+      <End Role="Niveles" EntitySet="Niveles" />
+      <End Role="AptitudesRequeridas" EntitySet="AptitudesRequeridas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NivelSolicitanteAptitud" Association="Self.FK_NivelSolicitanteAptitud">
+      <End Role="Niveles" EntitySet="Niveles" />
+      <End Role="SolicitantesAptitudes" EntitySet="SolicitantesAptitudes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OfertaAptitudRequerida" Association="Self.FK_OfertaAptitudRequerida">
+      <End Role="Ofertas" EntitySet="Ofertas" />
+      <End Role="AptitudesRequeridas" EntitySet="AptitudesRequeridas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OfertaSolicitud" Association="Self.FK_OfertaSolicitud">
+      <End Role="Ofertas" EntitySet="Ofertas" />
+      <End Role="Solicitudes" EntitySet="Solicitudes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OfertaVisita" Association="Self.FK_OfertaVisita">
+      <End Role="Ofertas" EntitySet="Ofertas" />
+      <End Role="Visitas" EntitySet="Visitas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SexoSolicitante" Association="Self.FK_SexoSolicitante">
+      <End Role="Sexos" EntitySet="Sexos" />
+      <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitante_inherits_Usuario" Association="Self.FK_Solicitante_inherits_Usuario">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SolicitanteAlerta" Association="Self.FK_SolicitanteAlerta">
+      <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+      <End Role="Alertas" EntitySet="Alertas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SolicitanteSolicitanteAptitud" Association="Self.FK_SolicitanteSolicitanteAptitud">
+      <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+      <End Role="SolicitantesAptitudes" EntitySet="SolicitantesAptitudes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SolicitanteSolicitud" Association="Self.FK_SolicitanteSolicitud">
+      <End Role="Usuarios_Solicitante" EntitySet="Usuarios_Solicitante" />
+      <End Role="Solicitudes" EntitySet="Solicitudes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TiempoContratacionOferta" Association="Self.FK_TiempoContratacionOferta">
+      <End Role="TiemposContratacion" EntitySet="TiemposContratacion" />
+      <End Role="Ofertas" EntitySet="Ofertas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UniversidadFacultad" Association="Self.FK_UniversidadFacultad">
+      <End Role="Universidades" EntitySet="Universidades" />
+      <End Role="Facultades" EntitySet="Facultades" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

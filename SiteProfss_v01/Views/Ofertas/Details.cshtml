@@ -1,0 +1,146 @@
+﻿@model SiteProfss_v01.Models.DB.Oferta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Oferta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departamento.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departamento.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TiempoContratacion.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TiempoContratacion.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaPublicacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaPublicacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArearLaboral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArearLaboral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadVacantes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadVacantes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HabilidadesRequeridas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HabilidadesRequeridas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EdadDesde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EdadDesde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EdadHasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EdadHasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remuneracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remuneracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TransporteRecorrido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TransporteRecorrido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaLimiteSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaLimiteSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anulada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anulada)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

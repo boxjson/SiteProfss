@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SiteProfss</title>
+    @Styles.Render("~/Content/css")
+    <!-- Font Awesome -->
+    <link href="~/Content/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header class="myheader">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.cshtml">
+                        <img src="~/img/Logotipo.png" alt="site identity" style="height:75px; width:75px" />
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul style="margin-left:50px; margin-top:15px" class="nav navbar-nav">
+                        <li>@Html.ActionLink("INICIO", "Index", "Home", null, new { @class = "li-itm" })</li>
+                        <li>@Html.ActionLink("OFERTAS", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("NOSOTROS", "About", "Home")</li>
+                        <li>@Html.ActionLink("CONTACTO", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    @RenderBody()
+
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-top-area">
+                            <a class="footer-logo" href="#"><img src="~/img/Logotipo.png" alt="Logo" style=" height:85px; width:85px"></a>
+                            <div class="footer-social">
+                                <a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
+                                <a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
+                                <a class="google-plus" href="#"><span class="fa fa-google-plus"></span></a>
+                                <a class="youtube" href="#"><span class="fa fa-youtube"></span></a>
+                                <a class="linkedin" href="#"><span class="fa fa-linkedin"></span></a>
+                                <a class="dribbble" href="#"><span class="fa fa-dribbble"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>SiteProfss Todos Los Derechos Reservados</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/SiteProfss")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
